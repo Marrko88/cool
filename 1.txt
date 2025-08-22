@@ -1,1 +1,11 @@
-fsfdfsfdds21fsdfsdfsdf
+sudo dnf install epel-release -y
+sudo dnf update -y
+
+
+
+sudo dnf install wkhtmltopdf -y
+
+
+cd /tmp
+curl -LO https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox-0.12.6-1.almalinux9.x86_64.rpm
+sudo dnf install ./wkhtmltox-0.12.6-1.almalinux9.x86_64.rpm -y
